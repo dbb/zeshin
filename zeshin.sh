@@ -28,7 +28,7 @@ if [ ! -d $backup_dir ]; then
     mkdir -p $backup_dir
 fi
 
-if [ $backup == 1 ]; then
+if [ $backup = 1 ]; then
     cp -r ${HOME}/${i} $backup_dir/${i}_${timestamp}
 fi
 
@@ -50,7 +50,7 @@ case $cmd in
 
         cd $repo_name
         git init
-        echo -e '*~'"\n*.swp" >> .gitignore
+        echo '*~'"\n*.swp" >> .gitignore
 
         for i in $files; do
             print "Copying ~/$i to repo"
@@ -72,7 +72,7 @@ case $cmd in
         fi
 
         for i in $files; do
-            echo -e "Installing $i to ~\n"
+            echo "Installing $i to ~\n"
             cp -r $i ~
         done
     ;;
@@ -80,7 +80,7 @@ case $cmd in
     ul)
         cd ${zeshin_dir}/${repo_name}
         for i in $files; do
-            echo -e "Uploading $i\n"
+            echo "Uploading $i\n"
             cp -r ~/${i} .
             git add $i
             git commit -m "Update $i"
