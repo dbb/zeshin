@@ -16,7 +16,7 @@ If you have neither curl nor wget, you can simply use a browser.
 
 ## Prerequisites
 
-You must have an active Github account and a valid `~/.gitconfig`. The script uses `zsh` as its interpreter, so you must have it installed but it doesn't have to be your shell
+You must have an active Github account and a valid `~/.gitconfig`. The original script was written with `zsh` as the interpreter, but I rewrote it to be POSIX-compliant (see `zeshin.sh`). Note that this version has only been tested on Debian (i.e. `dash`).
 
 
 ## Usage
