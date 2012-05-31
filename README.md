@@ -27,3 +27,6 @@ On another machine, just run `zeshin dl` and your configs are ready.
 
 If you've edited your files and want to upload them to Github, run `zeshin ul`.
 
+## License
+
+Copyright 2012, Daniel Bolton. This software is distributed under the [GNU General Public License](http://www.gnu.org/copyleft/gpl.html).
